@@ -6,12 +6,16 @@
 }
 
 /*body*/
+
+/*header*/
 body{
     font-family: "Nerko One",Arial, Helvetica, sans-serif;
     background-color: #add8e6;
     
 }
+/*end header*/
 
+/*main*/
 .container{
     width: 1024px;
     margin: auto;
@@ -19,6 +23,8 @@ body{
 
 h1{
     text-align: center;
+    font-size: 110px;
+    color: white;
 }
 
 .row{
@@ -33,8 +39,22 @@ h1{
     background-color: red;
     background-image: url(../img/pattern.png);
     background-size: 170px;
+    border-radius: 10%;
 }
+/*ultima cosa aggiunta,ripartire da qui */
+.card img{
+    display: none;
+}
+/*end main*/
 
+/*footer*/
+
+h2{
+    color: black;
+    text-align: center;
+    font-size: 30px;
+}
+/*end footer*/
 
 
 /*end body*/
