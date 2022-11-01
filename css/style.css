@@ -34,16 +34,63 @@ h1{
 .card{
     height: 200px;
     display: inline-block;
-    width: 20%;
+    width: 150px;
     margin: 10px;
-    background-color: red;
     background-image: url(../img/pattern.png);
     background-size: 170px;
     border-radius: 10%;
+    overflow: hidden;
+    background-color: white;
+    padding: 10px;
+    position: relative;
 }
-/*ultima cosa aggiunta,ripartire da qui */
+
+.text{
+    color: orange;
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    width: 100%;
+    left: -5px;
+    display: none;
+}
+
+.text.active{
+    display: block;
+}
+
+.text:hover{
+    color: blue;
+    
+    
+}
+
+.card.active{
+    background-image: none;
+    
+}
+.card:hover{
+    background-image: none;
+}
+
+.card:hover img{
+    display: inline-block;
+}
+.card:hover .text{
+    display: block;
+}
+img{
+    width: 100%;
+    background-color: white;
+}
+
+
 .card img{
     display: none;
+}
+
+.card.active img{
+    display: block;
 }
 /*end main*/
 
