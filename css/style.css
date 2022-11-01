@@ -21,16 +21,21 @@ body{
     margin: auto;
 }
 
+/*title*/
 h1{
     text-align: center;
     font-size: 110px;
     color: white;
 }
+/*end title*/
 
+/*row rules*/
 .row{
     text-align: center;
 }
+/*end row rules*/
 
+/*card rules*/
 .card{
     height: 200px;
     display: inline-block;
@@ -45,6 +50,28 @@ h1{
     position: relative;
 }
 
+.card.active{
+    background-image: none;
+    
+}
+.card:hover{
+    background-image: none;
+}
+
+.card:hover img{
+    display: inline-block;
+}
+.card:hover .text{
+    display: block;
+}
+
+.card img{
+    display: none;
+}
+
+.card.active img{
+    display: block;
+}
 .text{
     color: orange;
     position: absolute;
@@ -65,33 +92,12 @@ h1{
     
 }
 
-.card.active{
-    background-image: none;
-    
-}
-.card:hover{
-    background-image: none;
-}
-
-.card:hover img{
-    display: inline-block;
-}
-.card:hover .text{
-    display: block;
-}
 img{
     width: 100%;
     background-color: white;
 }
+/*end card rule*/
 
-
-.card img{
-    display: none;
-}
-
-.card.active img{
-    display: block;
-}
 /*end main*/
 
 /*footer*/
